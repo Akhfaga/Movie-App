@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="js/all.min.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title> MOVING</title>
+</head>
+
+<body>
+
+
+    <div class=" z-3 side-nav h-100 position-fixed position-absolute  d-flex">
+        <div class=" bg-black nav-icon  text-white nav-tab d-flex flex-column h-100 justify-content-between p-4">
+                 <div class=" links position-relative overflow-hidden p-5  ">
+                    <ul class="  list-unstyled">
+                        <li id="New playing" onclick= "grtNewPlaying()" class= "menu  py-3 position-relative cursor-pointer"> New playing</li>
+                        <li onclick= "grtPopular()" class="    menu   py-3 position-relative cursor-pointer">Popular</li>
+                        <li onclick= " grtTopRated()" class="  menu    py-3 position-relative cursor-pointer"> Top Rated</li>
+                        <li onclick= "grtTrending()" class="   menu    py-3 position-relative cursor-pointer"> Trending </li>
+                        <li onclick= "grtUpcoming()" class="   menu   py-3 position-relative cursor-pointer"> Upcoming </li>
+                       <a class="" href="#form"><li   class="   menu py-3 position-relative cursor-pointer"> Contact Us </li></a> 
+                    </ul>
+                </div>
+                
+                <div class="copyrights position-relative  ">
+                    <div class="rights-social  ">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-solid fa-globe"></i></a>
+                    </div>
+                    <p class="pt-3">Copyright © 2022 All Rights Reserved. <br>Created by <a href="https://github.com/Develekko" class="link-danger fw-bold" target="_blank">Housam Ramadan</a></p>
+                </div>
+        </div>
+
+          <div  class="nav-header   bg-info d-flex flex-column  align-items-center  justify-content-between py-4 text-center px-2 bg-white text-black">
+                        <img class=" w-50  " src="img/logo.png" alt="nav">
+                        <i class=" openCLose cursor-pointer fa-solid fa-align-justify  "></i>
+                         <div>
+                            <i class="fa-solid fa-globe d-block"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+ 
+
+         </div>
+         </div>
+
+
+ 
+         <section class="py-5">
+            <div class="d-flex justify-content-center">
+                <input id="input" type="search" class="form-control w-50 bg-white" placeholder="Search...">
+            </div>
+ 
+        </section>
+
+
+
+
+          <div class="rowData  " >
+            <div class="container">
+                <div class="row p-5 m-auto  " id="rowData"  >
+                     <!-- <div class=" card col-md-4  ">
+                        <img src="img/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg" alt="">
+                        <div class="caption text-center w-75">
+                            <h1>title</h1>
+                            <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                 Quidem deserunt nostrum temporibus quos atque hic, dolore est,
+                                  facere cum aperiam, omnis qui cupiditate quae 
+                                rem odio. Repellendus exercitationem maxime provident!</p>
+
+                        </div> -->
+                    </div>
+                </div>
+            </div> 
+
+<section class="loding">
+    
+            <div id="loading" class="loading ">
+                <span class="loader"></span>
+            </div>
+</section>>
+
+
+            <section class="form">
+                <form id="form" class="text-center form-check mx-5">
+
+                    <div>
+                        <h2 class="text-white" >Contact Us</h2>
+                    </div>
+
+
+                    <div class="row mt-3 mx-5">
+                        <div class="col-md-6">
+                            <input type="text" required id="name" maxlength="37" class="form-control mt-4" placeholder="Enter Your Name">
+                            <span id="msgName" class="error d-none text-danger">Invalid name</span>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" required id="email" class="form-control mt-4" placeholder="Enter Your Email">
+                            <span id="msgEmail" class="error d-none text-danger">Invalid email</span>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" required id="phone" class="form-control mt-4" placeholder="Enter Your Phone">
+                            <span id="msgPhone" class="error d-none text-danger">Invalid phone number</span>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="number" required id="age" class="form-control mt-4" placeholder="Enter Your Age">
+                            <span id="msgAge" class="error d-none text-danger">Invalid age</span>
+                        </div>
+                        <div class="col-md-6 position-relative">
+                            <input type="password" required id="password" class="form-control mt-4" placeholder="Enter Your Password">
+                            <span id="msgPassword" class="error d-none text-danger">Invalid password</span>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="password" required id="repassword" class="form-control mt-4" placeholder="Re-enter Password">
+                            <span id="msgRepassword" class="error d-none text-danger">Passwords do not match</span>
+                        </div>
+                        <div class="col-md-12 mt-4">
+                            <button type="submit" class="form-btn btn btn-outline-dark rounded-2 mb-3">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+
+
+            <div class="icon-111">
+                <span class=" arrow-up   bg-danger  ">
+                <a href="#input">  <i class="fa-solid fa-arrow-up "></i></a>
+                </span> 
+              </div>
+
+
+   
+
+
+ 
+
+ 
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

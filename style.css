@@ -1,0 +1,206 @@
+  body{
+    background: #000;
+  }
+.cursor-pointer{
+    cursor: pointer;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+.motion{
+
+animation-name: haza;
+animation-duration: 1s;
+animation-timing-function: ease-in-out;
+
+}
+
+@keyframes haza {
+  0%{
+    transform: translateY('30');
+  }
+  25%{
+    transform: translateX('50');
+  }
+  50%{
+    transform: translateY('70');
+  }
+  75%{
+    transform: translateX('50');
+  }
+  100%{
+    transform: translateY('100');
+  }
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #FFF;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-left: 4px solid #000000;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+
+@keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0,0,0,1);
+  z-index: 9999;
+  
+}
+
+
+
+ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(249, 249, 249);
+ }
+
+ 
+.menu::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: brown; 
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: all 0.5s ease-in-out;
+  bottom: 0;
+  right: 0;
+}
+
+.menu:hover::before {
+  transform: scaleX(0.5);
+}
+
+.menu:hover ul li {
+  color: rgb(231, 12, 12);
+  background-color: aliceblue;
+}
+
+ul li:hover {
+  color: rgb(231, 12, 12);  
+}
+
+
+
+
+
+ 
+.card{
+    background-color: #000;
+  overflow: hidden;
+  width: 400px;
+  height: 500px;
+
+      }
+
+ 
+.card img{
+
+  width: 100%;
+  height: 100%;
+   transition: opacity 2s, transform 1s;
+
+   }
+ 
+.caption{
+   width: 100%; 
+   height: 100%;
+   position:absolute;
+  color: aliceblue;
+  background-color: rgba(59, 59, 59, 0.169);
+  transform:  translateX(-100%);
+  transition: transform 1s;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+ 
+}
+
+
+.card:hover .caption{
+  transform: translate(0px);
+
+}
+
+.vote {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid green;
+  padding: 10px;
+  -webkit-border-radius: 50%; 
+}
+
+.card:hover img{
+  opacity: 0.1 ;
+  transform: rotate(10deg);
+}
+
+a{
+  text-decoration: none ;
+}
+
+.icon-111 a{
+  color: #ffffff;
+  border-radius:100% ;
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+  right: 20px;
+  bottom: 10px;
+  font-size: 25px;
+  z-index: 99999 !important;
+ }
+.icon-111 {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;  
+}
+
+.icon-111.show {
+  display: block; /* عرض الزر عند التمرير */
+}
